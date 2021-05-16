@@ -1,0 +1,20 @@
+- A class can have only public and default access specifiers. protected and private are not allowed.
+- Access specifiers:
+    - private : only code inside the class can access
+    - default : package-private access. Can be accessed within the same package.
+    - protected : default + any subclass outside the package can access. All classes within the same package + subclasses
+                  outside the package can access.
+    - public : Any class anywhere can access.
+- No keyword/identifier can be placed be the class and the class name.
+- You cannot change the signature of the main method. public static void main(String[] args) {};
+- No need to import a class if it is in the same package.
+- A non-static member cannot be accessed from a static context.
+- The return type of a method must be immediately followed by the method name.
+- A class can be instantiated inside any of its method code.
+- If a class is public, then the filename must match the classname else it will be compilation error. This also
+  means that a file can have only one public class. But if the class has default specifier, then filename can be
+  different than the classname.
+- A Java file can have multiple classes but one of them can be public.
+- A variable can be declared and initialised outside all the class methods but it cannot be reassigned outside the methods.
+  Reassignment can only be done inside a method.
+

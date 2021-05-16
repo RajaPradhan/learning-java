@@ -1,0 +1,6 @@
+command + , => preferences
+command + N => search class, files
+command + 1 => toggle project explorer
+control + N => new java class, package etc. / Generate code
+command + option + L => format code
+command + Y => delete a line
