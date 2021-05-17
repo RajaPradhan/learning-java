@@ -1,0 +1,49 @@
+- Class and Interface are the types in Java.
+- Classes provides a blueprint for the objects.
+- All Java statements appear within the classes.
+- The members of a class usually include fields, methods, constructors, initializers and nested types.
+- Members can be static or nonstatic. A static member belongs to the class itself, while a nonstatic
+  member is associated with the instances of a class.
+- An interface is a reference type similar to a class that defines method signatures but does not
+  usually include method bodies to implement the methods. However, from Java 8 onward, interfaces may use the
+  keyword default to indicate that a method specified in the interface is optional. If a method is optional,
+  the interface file must include a default implementation (hence the choice of keyword), which will be used by all
+  implementing classes that do not provide an implementation of the optional method.
+- A class that implements an interface is required to provide bodies for the interface’s non default methods.
+- Instances of a class that implement an interface are also instances of the interface type.
+
+- Reference types:
+    - Classes
+    - Interfaces
+    - Arrays
+    - Enums
+    - Annotations
+
+- If the class has both extends and implements keyword, the extends keyword must be before implements else it will be
+  a compilation error.
+
+- abstract classes
+    - An abstract class is one whose implementation is incomplete and cannot be instantiated.
+    - Any class with one or more abstract methods must be declared abstract.
+    - An abstract class may have zero abstract methods.
+- While instantiating, the reference type can be super class or interface but the resulting object can only use
+  methods present in the reference type.
+  Ex: Animal cat = new Cat();
+
+- final class
+    - Signifies that the implementation of the class is final and cannot be changed.
+    - The class cannot be extended. Hence a class cannot be declared to be both abstract and final.
+    - The final class can be instantiated.
+
+- strictfp
+  - If a class is declared strictfp, all its methods behave as if they were declared strictfp, and so exactly
+    follow the formal semantics of the floating point standard. This modifier is extremely rarely used.
+
+- A class can have the following modifiers:
+    - public, (default) : access specifier
+    - abstract
+    - final
+    - strictfp
+
+- A final field must be initialized.
+- Fields that are both static and final are compile time constants that javac may inline.

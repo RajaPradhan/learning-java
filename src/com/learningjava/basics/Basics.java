@@ -1,5 +1,7 @@
 package com.learningjava.basics;
 
+import java.io.Serializable;
+
 public class Basics {
     private static int num = 10;
 
@@ -23,6 +25,6 @@ public class Basics {
     }
 }
 
-class Sample {
+class Sample extends Basics implements Serializable {
 
 }
